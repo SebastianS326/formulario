@@ -6,7 +6,7 @@ const id = ref('');
 const persona = ref(null);
 
 const fetchPerson = () => {
-  axios.get(`http://localhost:3306/person/${id.value}`)
+  axios.get(`http://localhost:3000/person/${id.value}`)
     .then(response => {
       persona.value = response.data;
     })

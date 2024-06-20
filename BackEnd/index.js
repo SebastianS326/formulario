@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 
 // Configurar la conexión a MySQL directamente en el código
 const db = mysql.createConnection({
-    host: 'localhost:3306',
-    user: 'sebastianserna_sebastianserna',
-    password: '&&uhQ].i0Zvf', // Usualmente, la contraseña por defecto es vacía en XAMPP
-    database: 'sebastianserna_personas_db'
+    host: 'localhost',
+    user: 'root',
+    password: '', // Usualmente, la contraseña por defecto es vacía en XAMPP
+    database: 'personas_db'
 });
 
 db.connect(err => {
