@@ -13,7 +13,7 @@ const limpiarLoIng = () => {
 }
 
 const login = () => {
-  axios.post('http://localhost:3000/login', { username: username.value, password: password.value })
+  axios.post('http://localhost:3306/login', { username: username.value, password: password.value })
     .then(response => {
       localStorage.setItem('token', response.data.token);
       const role = JSON.parse(atob(response.data.token.split('.')[1])).role;

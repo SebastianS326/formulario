@@ -14,7 +14,7 @@ const submitForm = () => {
     email: email.value,
     telefono: telefono.value
   };
-  axios.post('http://localhost:3000/add', persona)
+  axios.post('http://localhost:3306/add', persona)
     .then(response => {
       alert('Persona agregada');
       nombre.value = '';
